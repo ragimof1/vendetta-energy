@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vendetta Energy</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./images/vendetta-logo-removebg.png">
 </head>
 <body>
     <header>
@@ -15,20 +16,37 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>Products</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <div class="header-container">
-            <img src="./images/Vendetta.png" alt="">
+            <div class="header-image">
+            <img src="./images/Vendetta.png" alt="Vendetta Can">
+            </div>
+            <div id="slogan">
+                <p class="slogan">V for Vendetta</p>
+                <p class="slogan">Energy for You</p>
+                </div>
         </div>
     </header>
     <main>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit magni quia, ipsa ipsam magnam tenetur error a enim id nobis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui similique et voluptatum doloribus nostrum praesentium quos molestiae ab distinctio.</p>
+        <div id="products">
+            <h1>#Products</h1>
+            <div class="energy-container">
+            <img src="./images/choose.png" alt="Vendetta Energies" class="energy">
+            </div>
+        </div>
+        <div id="about"></div>
+        <div id="contact"></div>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script>
+        ScrollReveal({ reset: true })
+    </script>
 </body>
 </html>

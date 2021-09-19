@@ -1,0 +1,1 @@
+ScrollReveal().reveal('#products',{delay: 400})
