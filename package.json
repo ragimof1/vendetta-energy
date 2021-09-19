@@ -1,0 +1,11 @@
+{
+  "name": "vendetta-energy",
+  "version": "1.0.0",
+  "description": "Vendetta Energy JSON File",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Ilkin Ragimov",
+  "license": "ISC"
+}
