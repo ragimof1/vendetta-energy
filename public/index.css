@@ -7,10 +7,13 @@
     --third-font: 'Amiri', serif;
     --primary-color: #151515;
     --secondary-color: #F4F9F9;
-    --third-color: #FF0000
+    --third-color: #316B83;
 }
 html{
     scroll-behavior: smooth;
+}
+body{
+    width: 100%;
 }
 *{
     margin: 0;
@@ -25,6 +28,7 @@ header{
 main{
     background-color: var(--primary-color);
     top: 0;
+    width: 100vw;
 }
 .img img{
     height: 7vh;
@@ -63,17 +67,23 @@ main{
     transform: translate(-50%, -50%);
 }
 .header-container img{
-    height: 50vh;
+    height: 45vh;
     transform: rotate(-37deg);
 }
 #products{
     padding-top: 75px;
     color: var(--secondary-color);
 }
-#products h1{
+#products > h1{
     text-align: center;
-    text-decoration: underline;
+}
+#products h1:first-child{
     font-family: var(--second-font);
+    text-decoration: underline;
+}
+.order{
+    margin-top: 200px;
+    font-family: var(--third-font);
 }
 #slogan{
     text-align: center;
@@ -90,9 +100,80 @@ main{
 .energy{
     width: 40vw;
 }
-@media (max-width: 768px) {
+#products > p{
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--first-font);
+    border: none;
+    outline: none;
+}
+.form{
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.form > input{
+    width: 370px;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    padding: 10px 10px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+.flex select{
+    width: 150px;
+    background: #fff;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    height: 40px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+.btn > button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--third-color);
+    border: 0;
+    outline: 0;
+    border-radius: 12px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.btn > button:hover{
+    transform: translateY(-4px);
+    background-color: #3f8aaa;
+}
+.btn > button:active{
+    transform: scale(0.9);
+}
+.form > input:focus{
+    background-color: var(--secondary-color);
+}
+@media (max-width: 770px) {
     .menu ul li{
         font-size: 23px;
+    }
+    .header-container img{
+        height: 30vh;
+    }
+    #slogan{
+        font-size: 35px;
+    }
+    .form > input{
+        width: 200px;
     }
 }
 @media (max-width: 500px) {
@@ -100,7 +181,7 @@ main{
         font-size: 13px;
     }
     #slogan{
-        font-size: 30px;
+        font-size: 20px;
     }
     .menu ul li, 
     .menu ul li a{
@@ -108,6 +189,20 @@ main{
     }
     .menu ul li:hover, 
     .menu ul li a:hover{
+        font-size: 15px;
+    }
+    .form{
+        grid-template-columns: 1fr;
+    }
+    .form > input{
+        width: 90vw;
+    }
+}
+@media (max-width: 300px) {
+    .header-container img{
+        height: 20vh;
+    }
+    #products > p{
         font-size: 15px;
     }
 }
