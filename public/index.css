@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 :root{
     --first-font: 'Lora', serif;
     --second-font: 'Rajdhani', sans-serif;
@@ -77,9 +78,20 @@ main{
 #products > h1{
     text-align: center;
 }
-#products h1:first-child{
+.products{
     font-family: var(--second-font);
     text-decoration: underline;
+    font-size: 45px;
+}
+#about{
+    padding-top: 150px;
+    color: var(--secondary-color);
+}
+.about{
+    text-align: center;
+    font-family: var(--second-font);
+    text-decoration: underline;
+    font-size: 45px;
 }
 .order{
     margin-top: 200px;
@@ -89,7 +101,7 @@ main{
     text-align: center;
     font-size: 50px;
     color: var(--secondary-color);
-    font-family: var(--third-font);
+    font-family: 'Special Elite', cursive;
 }
 .energy-container{
     display: flex;
@@ -115,8 +127,8 @@ main{
 }
 .form > input{
     width: 370px;
-    background: #fff;
-    color: #a3a3a3;
+    background: var(--secondary-color);
+    color: #525252;
     font: inherit;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     border: 0;
@@ -160,7 +172,36 @@ main{
     transform: scale(0.9);
 }
 .form > input:focus{
-    background-color: var(--secondary-color);
+    background-color: #e1e4e4;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.card{
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #082032;
+    border-radius: 20px;
+    border: 5px solid #051725;
+    box-shadow: 10px 10px 20px black;
+    transition: 0.25s ease;
+}
+.card > h3{
+    font-family: var(--first-font);
+    font-weight: bold;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card > img{
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
 }
 @media (max-width: 770px) {
     .menu ul li{
@@ -175,13 +216,24 @@ main{
     .form > input{
         width: 200px;
     }
+    .card{
+        width: 300px;
+        height: 450px;
+    }
+    .card > img{
+        width: 200px;
+        height: 240px;
+    }
+    .card > p{
+        font-size: 13px;
+    }
 }
 @media (max-width: 500px) {
     .menu ul li{
         font-size: 13px;
     }
     #slogan{
-        font-size: 20px;
+        font-size: 25px;
     }
     .menu ul li, 
     .menu ul li a{
@@ -196,6 +248,12 @@ main{
     }
     .form > input{
         width: 90vw;
+    }
+    .products{
+        font-size: 35px;
+    }
+    .about{
+        font-size: 35px;
     }
 }
 @media (max-width: 300px) {
